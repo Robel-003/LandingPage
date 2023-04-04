@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Startup</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+    <!-- Note that the below Bootstrap file is a specific version. If you grab the most
+    current from Bootstrap website, you will see the button grow transition being a lot faster
+    than in my video.  Use whichever style sheet you like best! -->
+    <!-- Bootstrap CSS from a CDN. This way you don't have to include the bootstrap file yourself -->
+<!-- CSS only -->  
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <!-- My own stylesheet -->
+    <link href="style.css" rel="stylesheet">
+  </head>
+
+
+  <body>
+    <!-- placing all content (text, bttn, hr line into a container) into a div..
+          ..so as to use the grid layout to our advantage -->
+
+    <!-- bootstrap has a flexbox container that allows us to align content on page. 
+          By adding d-flex, we've enabled flexbox.
+          The align-items-center, this should align the overall div container to be in the middle of a page. 
+          h-100 spans the height of the div container to be proporitional to the body of the page. -->
+
+    <div class="container d-flex align-items-center justify-content-center h-100"> 
+      <div class="row">
+
+        <!-- bootstrap class "text-center" is a bootstrap class that centers text. 
+              By adding col-12, we're expanding along the column to have it centered.
+              By using this technique, we can manipulate the placement of the content-->
+        <header class="text-center col-12">
+          <!-- using a class in bootstrap to uppercase text (class="text-uppercase")-->
+          <h1 class="text-uppercase"><strong>the biggest startup event of the year</strong></h1>
+        </header>
+
+        <!-- buffer(spacing) between the header, hr line, and button -->
+        <div class="buffer col-12"> </div>
+
+        <section class="text-center col-12">
+          <hr>
+          <!-- btn btn-primary is a class in bootstrap that comes with specific css. 
+                By adding btn-xl, we're adding additional css properties through its class -->
+          <a href="https://mailchi.mp/c1b619a9de7b/startup"> 
+            <button class="btn btn-primary btn-xl">Find out more</button>  
+          </a>
+        </section>
+        
+      </div>
+    </div>
+
+  </body>
+</html>
